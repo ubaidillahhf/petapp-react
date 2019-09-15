@@ -1,15 +1,20 @@
 import React from "react";
 import { render } from "react-dom";
+import { Router, Link } from "@reach/router";
 import SearchParams from "./SearchParams";
-// import Coba from "./Coba";
+import Details from "./Details";
 
 const App = () => {
   return (
     <React.StrictMode>
       <div>
-        <h1>adopt-me</h1>
-        <SearchParams />
-        {/* <Coba /> */}
+        <header>
+          <Link to="/">adopt-me</Link>
+        </header>
+        <Router>
+          <SearchParams path="/" />
+          <Details path="/details/:id" />
+        </Router>
       </div>
     </React.StrictMode>
   );
