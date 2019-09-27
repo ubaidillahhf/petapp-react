@@ -11,8 +11,6 @@ export default function Pet({ name, animal, breed, media, location, id }) {
     hero = media[0].small;
   }
 
-  console.log(media);
-
   return (
     <a href={`/details/${id}`} className="pet">
       <div className="image-container">
