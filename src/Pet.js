@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "@reach/router";
+
 export default function Pet({ name, animal, breed, media, location, id }) {
   // return React.createElement("div", {}, [
   //   React.createElement("h1", {}, name),
@@ -11,8 +13,10 @@ export default function Pet({ name, animal, breed, media, location, id }) {
     hero = media[0].small;
   }
 
+  const [blah, setBlah] = useState("blah"); //eslint-disable-line no-unused-vars, no-undef
+
   return (
-    <a href={`/details/${id}`} className="pet">
+    <Link to={`/details/${id}`} className="pet">
       <div className="image-container">
         <img src={hero} alt={name} />
       </div>
@@ -20,6 +24,6 @@ export default function Pet({ name, animal, breed, media, location, id }) {
         <h1>{name}</h1>
         <h2>{`${animal} - ${breed} - ${location}`}</h2>
       </div>
-    </a>
+    </Link>
   );
 }
