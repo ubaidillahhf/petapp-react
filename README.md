@@ -34,7 +34,7 @@
     a Project Pet App Build With ReactJs, and Parcel Module Bundler
     <br />
     <br />
-    <a href="https://autocal.dreamcode.site/">View Demo</a>
+    <a href="https://dreamcode.site/">View Demo</a>
     ·
     <a href="https://github.com/ubaidillahhf/petapp-react/issues">Report Bug</a>
     ·
